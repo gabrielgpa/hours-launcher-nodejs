@@ -11,6 +11,8 @@ export default function Main() {
         input.getInput();
         presenter.print();
         process.init(input.getWorkedDayTime());
+
+        start();
     }
 
     return {

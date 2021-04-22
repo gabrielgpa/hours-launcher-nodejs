@@ -10,6 +10,10 @@ export default function Input() {
 
     function getInput() {
         workedDayTime = prompt(constants.INFO_INPUT_HOURS_WORKED);
+
+        if (!workedDayTime) {
+            throw constants.ERROR_INPUT_FORMAT;
+        }
         
         let moment = momentJs(workedDayTime, "HH:mm", true);
         let sanitizedWorkedDayTime = ~~(workedDayTime.replace(':', ''));

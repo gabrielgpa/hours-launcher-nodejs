@@ -29,7 +29,7 @@ function Process() {
     }
     
     function generateSchedule() {
-        let hour = getRandomInt(9, 11);
+        let hour = getRandomInt(7, 11);
         let minute = getRandomInt(0, 59);
         let initHour = `${hour}:${minute}`;
         
