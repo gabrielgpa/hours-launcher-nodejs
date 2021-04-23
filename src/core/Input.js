@@ -12,7 +12,7 @@ export default function Input() {
         workedDayTime = prompt(constants.INFO_INPUT_HOURS_WORKED);
 
         if (!workedDayTime) {
-            throw constants.ERROR_INPUT_FORMAT;
+            throw constants.ERROR_INPUT_EMPTY;
         }
         
         let moment = momentJs(workedDayTime, "HH:mm", true);
